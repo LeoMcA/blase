@@ -1,0 +1,14 @@
+{
+  layout: index
+  title: The Ranting, Raving and Ramblings of Leo McArdle
+}
+<header>
+  <a href="/" id="link-home">mca.me.uk</a>
+</header>
+<div id="home">
+  <ul>
+  <% site.posts.forEach(function (post) { %>
+    <li><time datetime="<%= post.date.toISOString() %>"><%= post.date.toLocaleDateString('en-GB', {day: '2-digit', month: 'short', year: 'numeric'}) %></time><a href="<%= post.url %>"><%= post.title %></a></li>
+  <% }) %>
+  </ul>
+</div>

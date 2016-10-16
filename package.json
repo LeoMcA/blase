@@ -1,0 +1,12 @@
+{
+  "name": "static-site-generator",
+  "version": "0.0.1",
+  "author": "Leo McArdle <leomcardle@gmail.com>",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "commonmark": "^0.26.0",
+    "ejs": "^2.5.2",
+    "fs-extra": "^0.30.0",
+    "hjson": "^2.3.1"
+  }
+}

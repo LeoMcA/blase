@@ -1,0 +1,22 @@
+{
+  layout: index
+}
+<header>
+  <a href="/" id="link-home"><span>←</span>mca.me.uk</a>
+</header>
+<article>
+  <h1><%= page.title %></h1>
+  <time datetime="<%= page.date.toISOString() %>"><%= page.date.toLocaleDateString('en-GB', {day: '2-digit', month: 'short', year: 'numeric'}) %></time>
+  <%- content %>
+</article>
+<footer>
+<div id="social">
+  <h1>Enjoyed that?</h1>
+  <ul>
+    <li>Tip <a href="dogecoin:">DOGE</a> or <a href="bitcoin:">BTC</a></li>
+    <li><a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fmca.me.uk<%= page.url %>&text=<%= encodeURIComponent(page.title) %>">Share</a> on Twitter</li>
+    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fmca.me.uk<%= page.url %>">Share</a> on Facebook</li>
+    <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fmca.me.uk<%= page.url %>">Share</a> on Google+</li>
+  </ul>
+</div>
+</footer>
